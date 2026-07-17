@@ -1,0 +1,8 @@
+{
+  "name": "Remix: DIKDOK.ID",
+  "description": "Growth Marketing Partner for Healthcare. Attract more patients and achieve sustainable clinic growth.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
