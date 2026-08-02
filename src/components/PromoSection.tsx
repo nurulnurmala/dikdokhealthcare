@@ -57,13 +57,17 @@ export default function PromoSection({ onDownloadClick }: PromoSectionProps) {
                 {desc}
               </p>
 
-              {/* Action Button that routes to /ebooks in a New Tab */}
+              {/* Action Button that routes to /ebooks Ebook Library page */}
               <div className="pt-2">
                 <a
-                  href={ebooksUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-8 py-4 rounded-2xl bg-gradient-to-r from-primary via-orange-600 to-secondary text-white font-black text-xs uppercase tracking-wider hover:scale-[1.02] shadow-lg shadow-primary/25 transition-all duration-300 transform"
+                  href="/ebooks"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.history.pushState({}, "", "/ebooks");
+                    window.dispatchEvent(new Event("popstate"));
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                  className="inline-flex items-center gap-2 px-8 py-4 rounded-2xl bg-gradient-to-r from-primary via-orange-600 to-secondary text-white font-black text-xs uppercase tracking-wider hover:scale-[1.02] shadow-lg shadow-primary/25 transition-all duration-300 transform cursor-pointer"
                 >
                   <BookOpen className="w-4 h-4" />
                   <span>{ctaText}</span>
