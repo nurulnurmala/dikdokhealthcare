@@ -11,6 +11,7 @@ import ContactSection from "./components/ContactSection";
 import IntakeModal from "./components/IntakeModal";
 import EbookLibrary from "./components/EbookLibrary";
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
+import CertificateVerify from "./components/CertificateVerify";
 
 export default function App() {
   const [isIntakeOpen, setIsIntakeOpen] = useState(false);
@@ -37,6 +38,25 @@ export default function App() {
     setModalResource(resourceName);
     setIsIntakeOpen(true);
   };
+
+  // Certificate verification page (QR codes on certificates point to /verify/<code>)
+  const isVerifyRoute =
+    currentPath === "/verify" ||
+    currentPath.startsWith("/verify/") ||
+    window.location.search.includes("verify=");
+
+  if (isVerifyRoute) {
+    return (
+      <div className="min-h-screen bg-slate-50 text-gray-900 selection:bg-primary selection:text-white">
+        <Header />
+        <main>
+          <CertificateVerify />
+        </main>
+        <ContactSection onlyFooter={true} />
+        <FloatingWhatsApp />
+      </div>
+    );
+  }
 
   if (isEbooksRoute) {
     return (
