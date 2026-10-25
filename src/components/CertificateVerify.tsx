@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState, type FormEvent, type ReactNode } from "react";
-import { BadgeCheck, ShieldAlert, Search, CalendarDays, Hash, User, Award, MessageSquare } from "lucide-react";
-import { CERTIFICATES, EVENTS, type CertificateRecord } from "../certificatesData";
+import { BadgeCheck, ShieldAlert, Search, CalendarDays, Hash, User, Award, MessageSquare, Download } from "lucide-react";
+import { CERTIFICATES, EVENTS, certificatePdfUrl, type CertificateRecord } from "../certificatesData";
 import { WHATSAPP_URL } from "../data";
 
 // Normalise input so "001/DKD-WBN/S1/PST/X/2026", "No. 001/...", or the 8-char QR code all match.
@@ -99,6 +99,18 @@ export default function CertificateVerify() {
               <Row icon={<CalendarDays className="w-4 h-4" />} label="Tanggal" value={`${event.date} · ${event.mode}`} />
               <Row icon={<Hash className="w-4 h-4" />} label="Kode verifikasi" value={result.code} mono />
             </dl>
+            {result.driveFileId && (
+              <div className="px-5 py-4 border-t border-gray-100">
+                <a
+                  href={certificatePdfUrl(result.driveFileId)}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-xl bg-secondary px-5 py-3 font-bold text-white hover:bg-[#7a1d8d] transition-colors"
+                >
+                  <Download className="w-4 h-4" /> Unduh Sertifikat (PDF)
+                </a>
+              </div>
+            )}
             <p className="px-5 py-4 text-xs text-gray-500 bg-gray-50">
               Ditandatangani oleh Ivo MS, Founder DIKDOK Healthcare. Pastikan nama dan nomor di atas sama dengan yang tertera pada sertifikat.
             </p>
