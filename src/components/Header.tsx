@@ -14,7 +14,9 @@ export default function Header() {
     window.location.pathname === "/ebooks" || 
     window.location.pathname === "/promo" || 
     window.location.search.includes("page=ebooks") || 
-    window.location.search.includes("page=promo");
+    window.location.search.includes("page=promo") ||
+    window.location.pathname.startsWith("/verify") ||
+    window.location.search.includes("verify=");
 
   useEffect(() => {
     const handleScroll = () => {
