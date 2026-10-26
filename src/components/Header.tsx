@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, ArrowUpRight, MessageSquare, Globe } from "lucide-react";
+import { Menu, X, ArrowUpRight, MessageSquare, Globe, BadgeCheck } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { WHATSAPP_URL } from "../data";
 import { useLanguage } from "../context/LanguageContext";
@@ -33,6 +33,7 @@ export default function Header() {
     { name: t.nav.promo, href: isEbooksRoute ? "/#promo" : "#promo", isHighlighted: true },
     { name: t.nav.about, href: isEbooksRoute ? "/#about" : "#about", isHighlighted: true },
     { name: t.nav.faq, href: isEbooksRoute ? "/#faq" : "#faq", isHighlighted: true },
+    { name: t.nav.verify, href: "/verify", isHighlighted: true, compactIcon: true },
   ];
 
   return (
@@ -64,18 +65,26 @@ export default function Header() {
           </div>
 
           {/* Desktop Navigation Link Cluster */}
-          <nav className="hidden lg:flex items-center justify-center gap-2 xl:gap-3.5 lg:col-span-1 whitespace-nowrap flex-nowrap">
+          <nav className="hidden lg:flex items-center justify-center gap-1 xl:gap-3.5 lg:col-span-1 whitespace-nowrap flex-nowrap">
             {navItems.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
+                title={item.name}
                 className={`text-xs font-extrabold tracking-tight transition-all duration-200 relative ${
                   item.isHighlighted
-                    ? "text-primary hover:text-secondary bg-orange-50 px-3 py-1.5 rounded-full border border-orange-100"
+                    ? "text-primary hover:text-secondary bg-orange-50 px-2.5 xl:px-3 py-1.5 rounded-full border border-orange-100"
                     : "text-gray-600 hover:text-primary py-1.5"
                 }`}
               >
-                {item.name}
+                {"compactIcon" in item && item.compactIcon ? (
+                  <>
+                    <BadgeCheck className="w-4 h-4 xl:hidden" aria-hidden="true" />
+                    <span className="sr-only xl:not-sr-only xl:whitespace-nowrap">{item.name}</span>
+                  </>
+                ) : (
+                  item.name
+                )}
                 {item.isHighlighted && (
                   <span className="absolute -top-1 -right-1 flex h-2 w-2">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
@@ -95,7 +104,7 @@ export default function Header() {
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-black bg-gray-50 text-gray-700 hover:bg-gray-100 border border-gray-150 transition-all duration-200 cursor-pointer"
               title="Switch Language / Ganti Bahasa"
             >
-              <Globe className="w-3.5 h-3.5 text-primary" />
+              <Globe className="hidden xl:block w-3.5 h-3.5 text-primary" />
               <span className={language === "en" ? "text-primary font-black" : "text-gray-400 font-bold"}>EN</span>
               <span className="text-gray-300">|</span>
               <span className={language === "id" ? "text-primary font-black" : "text-gray-400 font-bold"}>ID</span>

@@ -43,6 +43,7 @@ export interface TranslationSchema {
     promo: string;
     about: string;
     faq: string;
+    verify: string;
     contact: string;
     freeConsultation: string;
   };
@@ -236,6 +237,7 @@ const translations: Record<Language, TranslationSchema> = {
       promo: "Ebook",
       about: "About",
       faq: "FAQ",
+      verify: "Verify Certificate",
       contact: "Contact Us",
       freeConsultation: "Free Consultation"
     },
@@ -705,6 +707,7 @@ const translations: Record<Language, TranslationSchema> = {
       promo: "Ebook",
       about: "Tentang Kami",
       faq: "FAQ",
+      verify: "Cek Sertifikat",
       contact: "Hubungi Kami",
       freeConsultation: "Konsultasi Gratis"
     },
