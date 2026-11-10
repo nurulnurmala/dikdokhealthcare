@@ -13,6 +13,9 @@ export interface EbookItem {
   currentPrice?: string;
 }
 
+// Ubah ke true untuk menampilkan lagi ebook GRATIS di halaman Ebook.
+export const SHOW_FREE_EBOOKS = false;
+
 const rawEbooksData: EbookItem[] = [
   // --- Volume 1 ---
   {
@@ -462,7 +465,9 @@ const rawEbooksData: EbookItem[] = [
   }
 ];
 
-export const ebooksData: EbookItem[] = rawEbooksData.map(item => {
+export const ebooksData: EbookItem[] = rawEbooksData
+  .filter(item => SHOW_FREE_EBOOKS || item.priceType !== "FREE")
+  .map(item => {
   const endsWithFreeEn = item.titleEn.endsWith("Free Ebook");
   const endsWithFreeId = item.titleId.endsWith("Free Ebook");
   const endsWithPackagesEn = item.titleEn.endsWith("Packages Ebook");

@@ -12,8 +12,8 @@ export default function VideoSection() {
     : "Saksikan bagaimana Framework Dikdok Healthcare membantu manajemen fasilitas kesehatan Anda tumbuh secara efektif";
 
   const subHeadingText = language === "en"
-    ? "Claim Free Ebook Now!"
-    : "Klaim Ebook Gratis Sekarang!";
+    ? "Explore Dikdok Ebooks Now!"
+    : "Lihat Ebook Dikdok Sekarang!";
 
   return (
     <section id="case-study-video" className="bg-[#F8F9FA] py-16 md:py-24 relative overflow-hidden text-center">

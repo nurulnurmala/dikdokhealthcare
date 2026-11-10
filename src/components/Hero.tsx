@@ -120,15 +120,15 @@ export default function Hero({ onCtaClick }: HeroProps) {
                   <span className="inline sm:hidden leading-tight">
                     {language === "id" ? (
                       <>
-                        Klaim Ebook
+                        Lihat
                         <br />
-                        Gratis
+                        Ebook
                       </>
                     ) : (
                       <>
-                        Claim Free
+                        Browse
                         <br />
-                        Ebook
+                        Ebooks
                       </>
                     )}
                   </span>

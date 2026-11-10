@@ -11,19 +11,19 @@ export default function PromoSection({ onDownloadClick }: PromoSectionProps) {
 
   const isEn = language === "en";
 
-  const title = "Free Healthcare Growth E-Book Library";
+  const title = "Healthcare Growth E-Book Library";
   
   const desc = isEn
-    ? "Get a collection of free e-books for doctors, clinics, hospitals, and healthcare professionals. Learn branding, marketing, patient communication, and healthcare business growth strategies that can be directly implemented."
-    : "Dapatkan kumpulan e-book gratis untuk dokter, klinik, rumah sakit, dan tenaga kesehatan. Pelajari strategi branding, marketing, komunikasi pasien, hingga pertumbuhan bisnis kesehatan yang dapat langsung diterapkan.";
+    ? "Get a collection of practical e-books for doctors, clinics, hospitals, and healthcare professionals. Learn branding, marketing, patient communication, and healthcare business growth strategies that can be directly implemented."
+    : "Dapatkan kumpulan e-book praktis untuk dokter, klinik, rumah sakit, dan tenaga kesehatan. Pelajari strategi branding, marketing, komunikasi pasien, hingga pertumbuhan bisnis kesehatan yang dapat langsung diterapkan.";
 
   const badge = isEn
-    ? "📥 Free Download • Practical • Based on Healthcare Industry Experience"
-    : "📥 Gratis Download • Praktis • Berbasis Pengalaman Industri Kesehatan";
+    ? "📥 Instant Access • Practical • Based on Healthcare Industry Experience"
+    : "📥 Akses Instan • Praktis • Berbasis Pengalaman Industri Kesehatan";
 
   const ctaText = isEn
-    ? "Claim Free Ebook Now"
-    : "Klaim Free Ebook Sekarang";
+    ? "Browse Ebooks Now"
+    : "Lihat Ebook Sekarang";
 
   // Navigation behavior: open the separate routing page in a new tab
   // Fallback to both path routing and parameter routing for maximum server tolerance

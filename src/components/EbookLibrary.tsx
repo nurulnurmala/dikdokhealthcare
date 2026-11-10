@@ -15,7 +15,7 @@ import {
 } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { useLanguage } from "../context/LanguageContext";
-import { ebooksData, EbookItem } from "../ebooksData";
+import { ebooksData, EbookItem, SHOW_FREE_EBOOKS } from "../ebooksData";
 
 // Helper component for generating premium 16:9 ebook thumbnail covers
 function EbookThumbnail({ title, category, priceType, thumbnail }: { title: string; category: string; priceType: "FREE" | "PAID"; thumbnail?: string }) {
@@ -271,7 +271,7 @@ export default function EbookLibrary() {
                   { id: "ALL", name: language === "en" ? "All E-books" : "Semua E-book" },
                   { id: "FREE", name: language === "en" ? "FREE" : "GRATIS" },
                   { id: "PAID", name: language === "en" ? "Premium (Paid)" : "Premium (Berbayar)" }
-                ].map((option) => (
+                ].filter((option) => SHOW_FREE_EBOOKS || option.id !== "FREE").map((option) => (
                   <button
                     key={option.id}
                     onClick={() => {
@@ -401,7 +401,7 @@ export default function EbookLibrary() {
                         { id: "ALL", name: language === "en" ? "All" : "Semua" },
                         { id: "FREE", name: language === "en" ? "FREE" : "GRATIS" },
                         { id: "PAID", name: language === "en" ? "Premium" : "Premium" }
-                      ].map((option) => (
+                      ].filter((option) => SHOW_FREE_EBOOKS || option.id !== "FREE").map((option) => (
                         <button
                           key={option.id}
                           onClick={() => {
