@@ -234,7 +234,7 @@ const rawEbooksData: EbookItem[] = [
     priceType: "PAID",
     thumbnail: "https://lh3.googleusercontent.com/d/1I_g9nW9Pk7pIuZTKdCPwY4y8iZwcFfDY",
     originalPrice: "Rp. 255.000",
-    currentPrice: "Rp 50k"
+    currentPrice: "Rp 75k"
   },
   {
     id: "hospital-growth-v2",
@@ -248,7 +248,7 @@ const rawEbooksData: EbookItem[] = [
     priceType: "PAID",
     thumbnail: "https://lh3.googleusercontent.com/d/1CPqU9_QHdpV68wh-swPDTECYdz0NnHPx",
     originalPrice: "Rp. 325.000",
-    currentPrice: "Rp 50k"
+    currentPrice: "Rp 75k"
   },
   {
     id: "branding-gp-v2",
@@ -262,7 +262,7 @@ const rawEbooksData: EbookItem[] = [
     priceType: "PAID",
     thumbnail: "https://lh3.googleusercontent.com/d/1VlcptE79UtyWs0spjapeGjLyaJMm-Pft",
     originalPrice: "Rp175.000",
-    currentPrice: "Rp 50k"
+    currentPrice: "Rp 75k"
   },
   {
     id: "branding-dentist-v2",
@@ -276,7 +276,7 @@ const rawEbooksData: EbookItem[] = [
     priceType: "PAID",
     thumbnail: "https://lh3.googleusercontent.com/d/1cje4PeENUErIDOdcKgFYpiuqTWOxlpgN",
     originalPrice: "Rp175.000",
-    currentPrice: "Rp 50k"
+    currentPrice: "Rp 75k"
   },
   {
     id: "branding-specialist-v2",
@@ -290,7 +290,7 @@ const rawEbooksData: EbookItem[] = [
     priceType: "PAID",
     thumbnail: "https://lh3.googleusercontent.com/d/19qCdHsWFuawCalrKAzujPTjnbNxbbbKm",
     originalPrice: "Rp185.000",
-    currentPrice: "Rp 50k"
+    currentPrice: "Rp 75k"
   },
   {
     id: "branding-audit-v2",
@@ -304,7 +304,7 @@ const rawEbooksData: EbookItem[] = [
     priceType: "PAID",
     thumbnail: "https://lh3.googleusercontent.com/d/1L7Rr_bHM6sXOfBbfvY1LfCTkiq3diPBH",
     originalPrice: "Rp225.000",
-    currentPrice: "Rp 50k"
+    currentPrice: "Rp 75k"
   },
   {
     id: "meta-ads-v2",
@@ -318,7 +318,7 @@ const rawEbooksData: EbookItem[] = [
     priceType: "PAID",
     thumbnail: "https://lh3.googleusercontent.com/d/1nu9jxrrrq4H79Pmn8U5Fz8thSWgxB847",
     originalPrice: "Rp275.000",
-    currentPrice: "Rp 50k"
+    currentPrice: "Rp 75k"
   },
   {
     id: "google-ads-v2",
@@ -332,7 +332,7 @@ const rawEbooksData: EbookItem[] = [
     priceType: "PAID",
     thumbnail: "https://lh3.googleusercontent.com/d/1nynu3suWKFgslkAIARNSDYVlk6_gO0bj",
     originalPrice: "Rp275.000",
-    currentPrice: "Rp 50k"
+    currentPrice: "Rp 75k"
   },
   {
     id: "seo-v2",
@@ -346,7 +346,7 @@ const rawEbooksData: EbookItem[] = [
     priceType: "PAID",
     thumbnail: "https://lh3.googleusercontent.com/d/1hxMASTYXbZdCIvlK4JM6OZY76Nv9sDjf",
     originalPrice: "Rp355.000",
-    currentPrice: "Rp 50k"
+    currentPrice: "Rp 75k"
   },
   {
     id: "website-v2",
@@ -360,7 +360,7 @@ const rawEbooksData: EbookItem[] = [
     priceType: "PAID",
     thumbnail: "https://lh3.googleusercontent.com/d/1f1Lo2mX-Uy5-s-tBwxySWCDf51rFh3bO",
     originalPrice: "Rp395.000",
-    currentPrice: "Rp 50k"
+    currentPrice: "Rp 75k"
   },
   {
     id: "admin-guide-v2",
@@ -374,7 +374,7 @@ const rawEbooksData: EbookItem[] = [
     priceType: "PAID",
     thumbnail: "https://lh3.googleusercontent.com/d/1t1CH8OI_Ghf4wfPKLVn_rmon_D9NSjov",
     originalPrice: "Rp215.000",
-    currentPrice: "Rp 50k"
+    currentPrice: "Rp 75k"
   },
   {
     id: "marketing-guide-v2",
@@ -388,7 +388,7 @@ const rawEbooksData: EbookItem[] = [
     priceType: "PAID",
     thumbnail: "https://lh3.googleusercontent.com/d/14lZpKTej1z4EiQe6pq05LUcs9CnbPg21",
     originalPrice: "Rp265.000",
-    currentPrice: "Rp 50k"
+    currentPrice: "Rp 75k"
   },
   {
     id: "sales-guide-v2",
@@ -402,7 +402,7 @@ const rawEbooksData: EbookItem[] = [
     priceType: "PAID",
     thumbnail: "https://lh3.googleusercontent.com/d/1CgBSCkUvwsgGFJYEkZBgKZAdD2H0tn5y",
     originalPrice: "Rp265.000",
-    currentPrice: "Rp 50k"
+    currentPrice: "Rp 75k"
   },
   {
     id: "manager-guide-v2",
@@ -416,7 +416,7 @@ const rawEbooksData: EbookItem[] = [
     priceType: "PAID",
     thumbnail: "https://lh3.googleusercontent.com/d/1FgJrYoPZb60FXMLhc99GeQAXijVVdxSl",
     originalPrice: "Rp285.000",
-    currentPrice: "Rp 50k"
+    currentPrice: "Rp 75k"
   },
   {
     id: "nurse-guide-v2",
@@ -430,7 +430,7 @@ const rawEbooksData: EbookItem[] = [
     priceType: "PAID",
     thumbnail: "https://lh3.googleusercontent.com/d/1nyOygzq5kaYhuDLShY-42HRRwA4SBbte",
     originalPrice: "Rp215.000",
-    currentPrice: "Rp 50k"
+    currentPrice: "Rp 75k"
   },
   {
     id: "dental-assistant-guide-v2",
@@ -444,7 +444,7 @@ const rawEbooksData: EbookItem[] = [
     priceType: "PAID",
     thumbnail: "https://lh3.googleusercontent.com/d/1wCIICQVw7CCbU5MMWyHxrl6bzwcocgzy",
     originalPrice: "Rp215.000",
-    currentPrice: "Rp 50k"
+    currentPrice: "Rp 75k"
   },
   {
     id: "quality-service-v2",
@@ -458,7 +458,7 @@ const rawEbooksData: EbookItem[] = [
     priceType: "PAID",
     thumbnail: "https://lh3.googleusercontent.com/d/1coJfRrIG8EKEe7canVpEsAg8V4Vyad5Q",
     originalPrice: "Rp295.000",
-    currentPrice: "Rp 50k"
+    currentPrice: "Rp 75k"
   }
 ];
 
